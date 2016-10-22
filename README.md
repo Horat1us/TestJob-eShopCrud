@@ -4,7 +4,8 @@ One of test jobs offered to me.
 It was built using **php7**, **jQuery 3**, **ReactJS**, **Bootstrap 4 Alpha** and *AJAX* for loading data.
 
 Developer: [Alexander Letnikow](mailto:reclamme@gmail.com)  
-[Demo Version](http://tj-eshopcrud.horatius.pro/)
+[Demo Version](http://tj-eshopcrud.horatius.pro/)  
+*All values, which you put on demo site will be deleted in 1 hour automatically (MySQL Events on the server)*
 
 Dependencies:
 - WebPack
@@ -44,4 +45,4 @@ In editor user must be able to:
 - Edit row without page reloading (AJAX)
 
 #### Solution
-![Solution](./screenshots/solution.png)
+[![Solution](./screenshots/solution.png)](http://tj-eshopcrud.horatius.pro/)
