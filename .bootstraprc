@@ -1,0 +1,11 @@
+{
+  "bootstrapVersion": 4,
+  "styles": true,
+  "scripts": true,
+  "appStyles": "./src/app.css",
+  "styleLoaders": [
+    "style",
+    "css",
+    "sass"
+  ]
+}

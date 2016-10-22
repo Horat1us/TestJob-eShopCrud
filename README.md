@@ -1,15 +1,16 @@
 # TestJob-eShopCrud
 Create database structure and simple CRUD AJAX Example  
 One of test jobs offered to me.
-It was built using **php7**, **jQuery 3**, **Bootstrap 4 Alpha** and *AJAX* for loading data.
+It was built using **php7**, **jQuery 3**, **ReactJS**, **Bootstrap 4 Alpha** and *AJAX* for loading data.
 
 Developer: [Alexander Letnikow](mailto:reclamme@gmail.com)  
 [Demo Version](http://tj-eshopcrud.horatius.pro/)
 
 Dependencies:
-- Bower
+- WebPack
 - jQuery 3
 - Bootsrap 4 Alpha 5
+- ReactJS
 - PHP 7
 - MySQL 5.7
 
@@ -17,9 +18,8 @@ Dependencies:
 #### Installing
 ```bash
 git clone https://github.com/Horat1us/TestJob-eShopCrud
-cd TestJob-eShopCrud
-bower install
 ```
+*This package was build using WebPack. If you will need to rewrite JavaScript or Styles you will need to download Node.JS and npm*
 
 ## Task
 ### Part 1: Database Design
@@ -44,4 +44,4 @@ In editor user must be able to:
 - Edit row without page reloading (AJAX)
 
 #### Solution
-TODO: Create screenshot
+![Solution](./screenshots/solution.png)

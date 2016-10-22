@@ -1,15 +1,16 @@
 CREATE TABLE categories
 (
-  idcategory INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  idparent_category INT(11) DEFAULT '0',
-  category_name VARCHAR(255) NOT NULL
+  idcategory        INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  idparent_category INT(11),
+  category_name     VARCHAR(255)        NOT NULL
 );
 CREATE TABLE items
 (
-  iditem INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  idcategory INT(11) NOT NULL,
-  item_name VARCHAR(255) NOT NULL,
-  item_description LONGTEXT
+  iditem           INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  idcategory       INT(11)             NOT NULL,
+  item_name        VARCHAR(255)        NOT NULL,
+  item_description LONGTEXT,
+  price            DECIMAL(10, 2)      NOT NULL
 );
 CREATE TABLE users
 (
@@ -35,7 +36,6 @@ CREATE TABLE order_items
 );
 ALTER TABLE categories ADD FOREIGN KEY (idparent_category) REFERENCES categories (idcategory) ON DELETE CASCADE ON UPDATE CASCADE;
 CREATE INDEX categories_categories_idcategory_fk ON categories (idparent_category);
-CREATE UNIQUE INDEX categories_category_name_uindex ON categories (category_name);
 CREATE UNIQUE INDEX categories_idcategory_uindex ON categories (idcategory);
 ALTER TABLE items ADD FOREIGN KEY (idcategory) REFERENCES categories (idcategory) ON DELETE CASCADE ON UPDATE CASCADE;
 CREATE INDEX items_categories_idcategory_fk ON items (idcategory);

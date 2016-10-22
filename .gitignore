@@ -49,3 +49,5 @@ fabric.properties
 
 #Bower
 bower_components/
+node_modules/
+/config.production.php
